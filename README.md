@@ -1,22 +1,60 @@
-# 👨‍💻 Project 1 - Coders of Delhi
+🚀 CodeBook: The Social Media Data Science Project
+Welcome to your Data Science Internship at CodeBook! 🇮🇳 Based in Delhi, this platform is the go-to network for developers. Your mission is to move from a raw data dump to a fully functional recommendation engine using Pure Python (no Pandas, no NumPy—just logic!).
 
-This project is a **Data Science** exploration focused on building a networking system for the coding community in Delhi. It analyzes coder data to suggest meaningful connections and relevant pages.
+📊 Project Overview
+You are tasked with handling the "CodeBook" backend data. The system revolves around two main entities:
 
-## 📁 Project Structure
+Users 👤: Each has a unique ID, name, list of friends, and liked pages.
 
-* **01_Introduction.ipynb**: Overview of the project goals and data.
-* **02_data_cleaning.ipynb**: Processing raw JSON data into a usable format.
-* **03_people_you_may_know.ipynb**: Algorithm to suggest new friends based on existing networks.
-* **04_pages_you_might_like.ipynb**: Interest-based page recommendations.
-* **Data Files**: Contains `data.json`, `cleaned_data2.json`, and `massive_data.json`.
+Pages 📄: Specialized hubs like "Python Developers" or "AI & ML Community".
 
-## 🛠️ Tech Stack
-* **Language:** Python
-* **Environment:** Jupyter Notebook
-* **Data Format:** JSON
+The goal is to prove your skills and land that ₹10 LPA job by completing four critical milestones.
 
-## 🚀 How to Run
-1. Clone the repo: 
-   `git clone https://github.com/DEVRA-Karan/Project-1---Coders-of-Delhi
-2. Open the notebooks in VS Code or Jupyter Lab.
-3. Run the cells sequentially starting from the Introduction.
+🛠️ Key Milestones
+1. Data Ingestion & Exploration 🔍
+The journey starts with raw JSON. You built a robust loader to peek into the data structure.
+
+Tooling: Used the built-in json module to parse files.
+
+Functionality: Created a structured display to map out user IDs against their specific connections.
+
+2. Data Cleaning & Sanitization 🧹
+Raw data is often "messy." You implemented a pipeline to ensure high data integrity:
+
+Name Validation: Automatically strips whitespace and removes users with missing names.
+
+Deduplication: Uses Python set() logic to clean up duplicate friend entries.
+
+Activity Filter: Removes "ghost" users who have zero friends and zero liked pages.
+
+Page Integrity: Ensures every Page ID in the system is unique.
+
+3. "People You May Know" Algorithm 🤝
+This is the heart of social growth! You built a recommendation engine based on Mutual Connections.
+
+The Logic: It scans your friends' lists to find people you aren't connected with yet.
+
+Ranking: Suggestions are prioritized based on the highest number of mutual friends.
+
+4. Smart Page Recommendations 💡
+To keep users engaged, you developed an interest-based suggestion system.
+
+Shared Interests: The algorithm finds "look-alike" users who like the same pages as you.
+
+Scoring: It suggests new pages based on a similarity score—calculated by the overlap in your liked pages.
+
+📈 The Workflow
+Load 📥: Import the massive_data.json file.
+
+Clean 🧼: Run the sanitization script to fix errors.
+
+Analyze 🧪: Apply collaborative filtering logic.
+
+Recommend ✨: Output the top suggested friends and pages.
+
+🚀 How to Use
+Since we are sticking to the basics, no heavy installations are required!
+
+Environment: Python 3.12+.
+
+Execution: Run the notebooks in sequence (01 through 04) to see the data transform from a messy dictionary into a powerful recommendation tool.
