@@ -17,6 +17,6 @@ This project is a **Data Science** exploration focused on building a networking 
 
 ## 🚀 How to Run
 1. Clone the repo: 
-   `git clone https://github.com/Karan081980/Project-1---Coders-of-Delhi.git`
+   `git clone https://github.com/DEVRA-Karan/Project-1---Coders-of-Delhi
 2. Open the notebooks in VS Code or Jupyter Lab.
 3. Run the cells sequentially starting from the Introduction.
