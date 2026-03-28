@@ -82,7 +82,7 @@ Given raw user data (in JSON format), the objective is to:
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/codebook-project.git
+git clone https://github.com/DEVRA-Karan/Project-1---Coders-of-Delhi
 ```
 
 ### 2️⃣ Navigate to folder
