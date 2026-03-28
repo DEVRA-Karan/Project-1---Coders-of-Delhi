@@ -1,60 +1,133 @@
-🚀 CodeBook: The Social Media Data Science Project
-Welcome to your Data Science Internship at CodeBook! 🇮🇳 Based in Delhi, this platform is the go-to network for developers. Your mission is to move from a raw data dump to a fully functional recommendation engine using Pure Python (no Pandas, no NumPy—just logic!).
+# 📊 Coders of Bangalore – Data Science Project
 
-📊 Project Overview
-You are tasked with handling the "CodeBook" backend data. The system revolves around two main entities:
+---
 
-Users 👤: Each has a unique ID, name, list of friends, and liked pages.
+## 🚀 Project Overview
 
-Pages 📄: Specialized hubs like "Python Developers" or "AI & ML Community".
+This project is a **real-world data processing and analysis challenge** based on a simulated social media platform for coders.
 
-The goal is to prove your skills and land that ₹10 LPA job by completing four critical milestones.
+The goal is to work with raw data and transform it into meaningful insights.
 
-🛠️ Key Milestones
-1. Data Ingestion & Exploration 🔍
-The journey starts with raw JSON. You built a robust loader to peek into the data structure.
+### 🔍 The project focuses on:
 
-Tooling: Used the built-in json module to parse files.
+- Handling raw, unstructured data  
+- Cleaning and structuring datasets  
+- Building recommendation systems  
+- Performing meaningful analysis  
 
-Functionality: Created a structured display to map out user IDs against their specific connections.
+---
 
-2. Data Cleaning & Sanitization 🧹
-Raw data is often "messy." You implemented a pipeline to ensure high data integrity:
+## 🧠 Problem Statement
 
-Name Validation: Automatically strips whitespace and removes users with missing names.
+Given raw user data (in JSON format), the objective is to:
 
-Deduplication: Uses Python set() logic to clean up duplicate friend entries.
+- 👥 Suggest **People You May Know**  
+- 📄 Recommend **Pages You Might Like**  
+- 🧹 Clean and preprocess messy data  
+- 🔍 Analyze user connections and interests  
 
-Activity Filter: Removes "ghost" users who have zero friends and zero liked pages.
+---
 
-Page Integrity: Ensures every Page ID in the system is unique.
+## 📁 Project Structure
 
-3. "People You May Know" Algorithm 🤝
-This is the heart of social growth! You built a recommendation engine based on Mutual Connections.
+```
+📦 CodeBook-Project
+ ┣ 📜 01_Introduction.ipynb
+ ┣ 📜 02_data_cleaning.ipynb
+ ┣ 📜 03_people_you_may_know.ipynb
+ ┣ 📜 04_pages_you_might_like.ipynb
+ ┣ 📜 data.json
+ ┗ 📜 README.md
+```
 
-The Logic: It scans your friends' lists to find people you aren't connected with yet.
+---
 
-Ranking: Suggestions are prioritized based on the highest number of mutual friends.
+## 📓 Notebooks Description
 
-4. Smart Page Recommendations 💡
-To keep users engaged, you developed an interest-based suggestion system.
+### 📘 01_Introduction.ipynb
+- Load and explore dataset  
+- Understand structure of JSON data  
+- Create helper functions  
 
-Shared Interests: The algorithm finds "look-alike" users who like the same pages as you.
+---
 
-Scoring: It suggests new pages based on a similarity score—calculated by the overlap in your liked pages.
+### 🧹 02_data_cleaning.ipynb
+- Handle missing values  
+- Remove duplicates  
+- Clean inconsistent data  
 
-📈 The Workflow
-Load 📥: Import the massive_data.json file.
+---
 
-Clean 🧼: Run the sanitization script to fix errors.
+### 🤝 03_people_you_may_know.ipynb
+- Build friend recommendation system  
+- Suggest users based on mutual connections  
 
-Analyze 🧪: Apply collaborative filtering logic.
+---
 
-Recommend ✨: Output the top suggested friends and pages.
+### ⭐ 04_pages_you_might_like.ipynb
+- Recommend pages based on interests  
+- Analyze user behavior  
 
-🚀 How to Use
-Since we are sticking to the basics, no heavy installations are required!
+---
 
-Environment: Python 3.12+.
+## ⚙️ Technologies Used
 
-Execution: Run the notebooks in sequence (01 through 04) to see the data transform from a messy dictionary into a powerful recommendation tool.
+- 🐍 Python  
+- 📦 JSON  
+- 📓 Jupyter Notebook  
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/codebook-project.git
+```
+
+### 2️⃣ Navigate to folder
+```bash
+cd codebook-project
+```
+
+### 3️⃣ Open Jupyter Notebook
+```bash
+jupyter notebook
+```
+
+### 4️⃣ Run in order
+```
+01 → 02 → 03 → 04
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+- Real-world data handling  
+- Data cleaning techniques  
+- Recommendation system building  
+- Analytical thinking  
+
+---
+
+## 💼 Internship Context
+
+This project simulates a **Data Science Internship task**  
+where you solve real-world problems using data.
+
+---
+
+## 🤝 Contributing
+
+Feel free to improve this project by:
+
+- Adding better recommendation algorithms  
+- Creating visualizations  
+- Applying machine learning models  
+
+---
+
+## 📬 Contact
+
+For any queries or suggestions, feel free to connect!
