@@ -1,4 +1,4 @@
-# 📊 Coders of Bangalore – Data Science Project
+# 📊 Coders of Delhi – Data Science Project
 
 ---
 
